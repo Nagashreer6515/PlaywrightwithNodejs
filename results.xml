@@ -1,0 +1,43 @@
+<testsuites id="" name="" tests="3" failures="2" skipped="0" errors="0" time="31.239672000050543">
+<testsuite name="HandlingWindows.spec.js" timestamp="2024-11-15T05:53:25.823Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.002" errors="0">
+<testcase name="Handle Multiple Pages/Windows" classname="HandlingWindows.spec.js" time="30.002">
+<failure message="HandlingWindows.spec.js:22:6 Handle Multiple Pages/Windows" type="FAILURE">
+<![CDATA[  [chromium] › HandlingWindows.spec.js:22:6 › Handle Multiple Pages/Windows ────────────────────────
+
+    Test timeout of 30000ms exceeded.
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="screenshot.spec.js" timestamp="2024-11-15T05:53:25.823Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30" errors="0">
+<testcase name="Element screenshot" classname="screenshot.spec.js" time="30">
+<failure message="screenshot.spec.js:13:6 Element screenshot" type="FAILURE">
+<![CDATA[  [chromium] › screenshot.spec.js:13:6 › Element screenshot ────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.screenshot: Target closed
+    =========================== logs ===========================
+    waiting for locator('xpath=//*[@id="content"]/div[2]/div[1]/form/div')
+    ============================================================
+
+      13 | test.only('Element screenshot', async ({ page }) => {
+      14 |     await page.goto('https://demo.opencart.com/')
+    > 15 |     await page.locator('//*[@id="content"]/div[2]/div[1]/form/div').screenshot({ path:'tests/screenshots/'+Date.now()+'Macbook.png'})
+         |                                                                     ^
+      16 | });
+
+        at C:\Program Files\playwrightautomation-master\tests\screenshot.spec.js:15:69
+
+    Pending operations:
+      - locator.screenshot at tests\screenshot.spec.js:15:69
+
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="UploadFiles.spec.js" timestamp="2024-11-15T05:53:25.823Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.664" errors="0">
+<testcase name="Multiple Files" classname="UploadFiles.spec.js" time="13.664">
+</testcase>
+</testsuite>
+</testsuites>
